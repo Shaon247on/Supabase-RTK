@@ -187,7 +187,7 @@ export default function page() {
           {tasks.map((task) => (
             <div key={task.id} className="border p-4 my-2 rounded flex items-center gap-4">
               <div>
-                <Image src={task.img_url} alt="Task Image" width={100} height={100} className="rounded-md mb-2" /> 
+                <Image src={task.img_url || "/not-found.jpg"} alt="Task Image" width={100} height={100} className="rounded-md mb-2" /> 
               </div>
               <div className="flex-1">
                 <h2 className="text-xl font-semibold">{task.title}</h2>
