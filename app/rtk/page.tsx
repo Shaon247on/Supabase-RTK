@@ -16,7 +16,7 @@ export default function Home() {
   console.log("Session from Redux store:", session);
 
 
-  const {data, error, isLoading, refetch} = useGetPostsQuery();
+  const {data, error, isLoading, refetch} = useGetPostsQuery({});
   const [createPost, {isLoading: isCreating, error: createError}] = useCreatePostMutation();
 
   const fetchSession = async ()=>{
